@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Admin</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Admin</h1>
+			<a href=".">Back</a>
+			<form method="post" role="form">
+				<div class="form-group">
+					<label for="board_title">Title</label>
+					<input class="form-control" type="text" placeholder="Title" name="board_title" value="{{board_title}}" />
+				</div>
+				<div class="form-group">
+					<label for="query">Search Terms</label>
+					<input class="form-control" type="text" placeholder="Terms" name="query" value="{{query}}" />
+				</div>
+				<div class="form-group">
+					<label for="query">Blacklist</label>
+					<input class="form-control" type="text" placeholder="Terms" name="filters" value="{{filters}}" />
+				</div>
+				<div class="form-group">
+					<label for="location">Location (will get tweets within 20 miles)</label>
+					<input class="form-control" type="text" placeholder="City/State/Region" name="location" value="{{location}}" />
+				</div>
+				<div class="form-group">
+					<label for="animation">Animation</label>
+					<select class="form-control" name="animation">
+						<option value="slideright" {{slideright_on}}>Slide Right</option>
+						<option value="fading" {{fading_on}}>Fading</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<!-- TODO: Verify me -->
+					<label for="tweet_count">Number of tweets to pull initially</label>
+					<input class="form-control" type="text" placeholder "# of tweets" name="tweet_count" value="{{tweet_count}}" />
+				</div>
+				<button class="btn btn-primary" type="submit">Update Board</button>
+			</form>
+		</div>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="/resources/css/home2.css" />
+		<script src="//code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	</body>
+</html>

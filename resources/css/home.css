@@ -1,0 +1,13 @@
+body {
+	background-color: #d9dee3;
+}
+.container {
+	margin-top: 5%;
+	min-height: 300px;
+	text-align: center;
+}
+
+#querybar {
+	width: 100px;
+	height: 30px;
+}

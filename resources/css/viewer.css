@@ -1,0 +1,52 @@
+/* Viewer CSS File
+ * Styles the  Viewer.html page
+ * Authors: Adam Mirza
+ */
+
+body {
+	background-color: rgb(48, 119, 201) !important; /* Standard syntax (must be last) */
+	font-family: "Istok Web", sans-serif;
+}
+
+/* Each tweet block */
+.block {
+	background-color: #E6E6E6;
+	border: 4px white solid;
+	border-radius: 15px;
+	margin: 5px;
+	padding: 8px;
+	width: 400px;
+}
+
+.userinfo img {
+	float: left;
+	height: 50px;
+	width: 50px;
+	margin-right: 5px;
+}
+
+.block {
+	overflow: hidden;
+}
+
+.username {
+	font-size: 16pt;
+}
+
+.date {
+	font-size: 8pt;
+	color: black;
+}
+
+.text {
+	font-size: 11pt;
+}
+
+.ratings {
+	margin-left: 2%;
+	width: 47%;
+	float: left;
+	text-align: center;
+	font-size: 10pt;
+	padding: 0;
+}
